@@ -1,3 +1,176 @@
-.st{
-    background-color: aqua;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+ 
 }
+
+
+
+
+
+
+/* Share style */
+.share-style{
+
+
+}
+
+.mx-width{
+  max-width: 1600px;
+  margin: auto;
+  /* border: 3px solid green; */
+  background-color: #412567;
+}
+
+
+
+.gradient-text{
+ background: linear-gradient(to top, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn{
+ background: var(--linear, linear-gradient(47.60deg,  rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+
+}
+
+
+
+.text-white{
+  color: rgba(255, 255, 255, 1);
+}
+
+.bg-color{
+  background-color: #412567;
+}
+
+
+
+
+/* Main style */
+/* main style start here */
+
+.navbar{
+  
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.nav-brand{
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  
+  
+}
+
+.items{
+ display: flex;
+ gap: 22px;
+}
+
+.nav-item{
+  list-style: none;
+  
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.btn-primary{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: aliceblue;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 45px;
+  border: none;
+  font-weight: bolder;
+  transition: all 0.3 ease;
+}
+
+.btn-img{
+  height: 17px;
+  
+  
+}
+
+nav li:hover{
+  background: var(--linear, linear-gradient(47.60deg,  rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+}
+
+nav button:hover{
+  transform: scale(1.15);
+}
+
+
+.humburger-logo{
+  display: none;
+  
+}
+
+
+
+
+
+
+
+/* Media query small device */
+@media screen and (max-width:576px) {
+   .navbar, .items{
+    flex-direction: column;
+   }
+
+   .items, .btn-primary, .gradient-btn, .btn-img{
+    display: none;
+
+   }
+
+  .humburger{
+    max-width: 440px;
+    height: 60px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   align-items: center;
+   
+  }
+
+
+  .nav-brand {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+
+   .humburger-logo{
+    display: block;
+    margin-right: 15px;
+
+   }
+
+    
+  
+}
+
+
+
+
+
+
+
