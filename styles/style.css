@@ -477,16 +477,75 @@ margin: auto;
   }
 
 
+  /* ........Host Section Start Here........ */
 
 
+  .Host-Containmer{
+   max-width: 1600px;
+   margin: auto;
+   background-color: #18013b;
+   padding-bottom: 60px;
+   padding-top: 1px;
+  }
+
+  .host-main{
+    
+    max-width: 1200px;
+    margin: auto;
+  }
 
 
+  .host-H{
+    text-align: center;
+    font-size: 55px;
+    color: #FFFFFF;
+  }
+
+ .Host-name{
+  font-size: 40px;
+   color: #FFFFFF;
+ }
+
+
+ .Host-description{
+ color: #FFFFFF;
+ }
+
+
+  .Host{
+   display: flex;
+   gap: 40px;
+   align-items: center;
+  }
+
+  .Host-content{
+    border:  3px solid rgb(15, 14, 14);
+    background-color: #351165;
+    border-radius: 25px;
+    padding-bottom: 40px;
+  }
+
+  .Host-img{
+    padding-top: 35px;
+    padding-left: 25px;
+  }
+
+
+  .Social-icon{
+  /* padding-left: 263px; */
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  margin-left: 263px;
+
+  }
+
+ 
 
 
 
 /* Media query small device */
 @media screen and (max-width:576px) {
-   .navbar, .items,  .card-div {
+   .navbar, .items,  .card-div , .Host {
     flex-direction: column;
    }
 
@@ -681,6 +740,45 @@ margin: auto;
 
 .Episodes-h{
   font-size: 12px;
+}
+
+
+  /* host */
+
+
+  .host-main{
+    width: 300px;
+  }
+    .host-H{
+      font-size: 20px;
+    }
+   
+.Host-name{
+  text-align: center;
+  font-size: 18px;
+}
+
+.Host-description{
+  font-size: 12px;
+  text-align: center;
+  padding: 7px;
+}
+
+.card-i{
+  position: relative;
+  margin: 5px;
+}
+
+.Social-icon{
+ position: absolute;
+ right: 126px;
+ align-items: center;
+ 
+
+  
+  
+  
+  
 }
 
   }
