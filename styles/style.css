@@ -267,15 +267,214 @@ font-weight: bolder;
 /* main section start here  */
 
 
+.podcast-container{
+ max-width: 1600px;
+ margin: auto;
+ margin-top: -25px;
+ text-align: center;
+ background-color: #18013b;
+ padding-top: 10px;
+ padding-bottom: 40px;
+ 
+}
+
+.podcast-body{
+border: 2px solid green;
+max-width: 1200px;
+margin: auto;
+}
+
+.Podcast-title{
+  color: #FFFFFF;
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+.Podcast-description{
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 500px;
+  
+}
+
+.podcast-analysis{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 115px;
+
+}
+
+.Container-H{
+  color: #FFFFFF;
+  font-size: 36px;
+  padding-top: 35px;
+}
+
+.analysis-number{
+  color: #00FF88;
+  font-size: 30px;
+  font-weight: 900px;
+
+}
+
+.Container-section{
+  
+  max-width: 1600px;
+  margin: auto;
+  text-align: center;
+  background-color: #230E3D;
+  padding-bottom: 80px;
+  padding-top: 1px;
+ 
+}
+
+.content-div{
+   max-width: 1200px;
+  margin: auto;
+
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px;
+}
+
+.card-long{
+  
+  grid-row: span 2;
+  height: 400px;
+  width: 300px;
+  text-align: start;
+  padding: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+  padding-top: 150px;
+  
+
+}
+
+.card-2{
+  
+  grid-column: span 2;
+  text-align: start;
+  padding: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+}
+.card-3{
+  
+  grid-column: span 2;
+  text-align: start;
+  padding: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+}
+.card-4{
+  
+  grid-column: span 2;
+  height: 273px;
+  text-align: start;
+  padding: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+  
+}
+ 
+
+.card-5{
+  
+  text-align: start;
+  padding: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+ 
+}
+
+.card-h{
+  font-size: 17px;
+  color: #FFFFFF;
+  
+
+}
+
+.card-p{
+  color: #FFFFFF;
+  font-size: 15px;
+
+
+}
 
 
 
 
+/* .......Episodes-Container section start here...... */
+
+.Episodes-Container{
+  /* border:  3px solid rgb(223, 7, 7); */
+  max-width: 1600px;
+  margin: auto;
+  background-color: #18013b;
+  padding-bottom: 100px;
+  padding-top: 1px;
+  
+  
+}
+
+.title-Ep{
+  font-size: 55px;
+  text-align: center;
+  font-size: 80px;
+  color: #FFFFFF;
 
 
+}
 
 
+.Episodes-body{
+  /* border:  3px solid green; */
+  max-width: 1200px;
+  margin: auto;
+  }
 
+  .Episodes-video{
+    
+    width: 380px;
+    background-color: #351165;
+    border-radius: 24px;
+    
+  }
+
+  .video-img{
+    border-radius :24px 24px 0px 0px;
+  }
+
+  .episode-description{
+    padding-left: 25px;
+  }
+
+  .Episodes-h{
+    color: #FFFFFF;
+    font-size: 23px;
+  }
+  .Episodes-p{
+   color: #FFFFFF;
+  }
+  .Episodes-p2{
+  color: #00FF88;
+  display: flex;
+  align-items: center; 
+  justify-items: center;
+  gap: 5px;
+
+  }
+
+  .card-div{
+    display: flex;
+    gap: 27px;
+  }
 
 
 
@@ -287,7 +486,7 @@ font-weight: bolder;
 
 /* Media query small device */
 @media screen and (max-width:576px) {
-   .navbar, .items {
+   .navbar, .items,  .card-div {
     flex-direction: column;
    }
 
@@ -296,6 +495,7 @@ font-weight: bolder;
    .gradient-btn, 
    .btn-img,
    .nav-link
+  
    {
     display: none;
 
@@ -365,8 +565,123 @@ font-weight: bolder;
    
    /* main section start here */
 
+   
+   .podcast-container{
+    margin-top: -200px;
+    height: 193px;
+   }
 
 
+
+   .Podcast-title{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.Podcast-description{
+  color: #FFFFFF;
+  font-size: 5px;
+  
+  
+  
+}
+
+.podcast-analysis{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 20px;
+
+  
+}
+  
+.analysis-number{
+  font-size: 12px;
+}
+
+.media-des{
+ font-size: 9px;
+}
+
+.media-img{
+ height: 13px;
+ 
+}
+
+.media{
+  margin-bottom: 4px;
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding-left: 80px;
+  
+}
+
+/* Tachwave choose section start here */
+
+
+
+
+.Container-section{
+ height: 1740px;
+}
+  
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.card-long{
+  height: 190px;
+  width: 222px;
+  /* margin-bottom: 50px; */
+  /* padding-bottom: 200px; */
+  padding-top: 150px; 
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ 
+  
+}
+
+.card-2{
+  width: 222px;
+}
+
+.card-3{
+  width: 222px;
+}
+.card-4{
+  width: 222px;
+  
+}
+
+/* ....Episodes-video start here..... */
+
+.Episodes-Container{
+  padding-bottom: 25px;
+}
+
+.title-Ep{
+  font-size: 20px;
+}
+
+  .video-img{
+    width: 300px;
+  }
+
+.Episodes-video{
+  width: 300px;
+  font-size: 10px;
+  margin-left: 22px;
+  
+}
+
+.Episodes-h{
+  font-size: 12px;
+}
 
   }
 
