@@ -21,7 +21,7 @@
   max-width: 1600px;
   margin: auto;
   /* border: 3px solid green; */
-  background-color: #412567;
+  background-color: #18013b;
 }
 
 
@@ -43,9 +43,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.bg-color{
-  background-color: #412567;
-}
+
 
 
 
@@ -87,6 +85,7 @@
   font-size: 20px;
   font-weight: 500;
   color: white;
+  
 }
 
 .btn-primary{
@@ -102,6 +101,7 @@
   border: none;
   font-weight: bolder;
   transition: all 0.3 ease;
+
 }
 
 .btn-img{
@@ -125,6 +125,161 @@ nav button:hover{
 }
 
 
+/* Hero-cercle style */
+
+.Parent-container{
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 760px;
+  margin: auto;
+ justify-items: center;
+}
+
+
+.Hero-container{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.hero-circle{
+  
+  padding-top: 100px;
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+
+}
+
+
+
+
+
+
+.microphone{
+ position: absolute;
+ margin-top: 100px;
+ 
+ 
+ 
+}
+
+.new-badge{
+ background-color: #00FF88;
+ width: 50px;
+ height: 20px;
+ text-align: center;
+ border-radius: 12px;
+ font-size: 14px;
+ padding-top: 2px;
+ font-weight: 600px;
+ margin-bottom: 200px;
+ position: absolute;
+ margin-left: 200px;
+ animation: glow-pulse 1.5s infinite ease-out;
+ 
+ 
+}
+
+
+@keyframes glow-pulse{
+0%{
+  transform: scale(1);
+  box-shadow: 0 0 5px #FFFFFF;
+  
+}
+
+  
+50%{
+  transform: scale(1.4);
+  box-shadow: 0 0 10px #FFFFFF;
+}
+
+100%{
+  transform: scale(1);
+  box-shadow: 0 0 5px #FFFFFF;
+}
+
+} 
+
+
+.Hero-title{
+ color: white;
+ font-size: 55px;
+}
+
+.Hero-description{
+color: #FFFFFF;
+
+}
+
+.btn{
+ display: flex;
+ gap: 10px;
+ 
+}
+
+.btn-spotify{
+ background: var(--linear, linear-gradient(47.60deg,  rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+ color: #FFFFFF;
+ font-size: 10px;
+ width: 120px;
+display: flex;
+align-items: center;
+gap: 5px;
+height: 27px;
+border-radius:45px ;
+border: none;
+font-weight: bolder;
+
+}
+
+.spotyfy-img{
+  height: 12px;
+}
+
+
+.btn-massage{
+  background-color: transparent;
+  border: 1px solid #00FF88;
+  color: #00FF88;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 80px;
+  border-radius: 38px ;
+  font-weight: bolder;
+  
+
+}
+
+.msg-img{
+  height: 10px;
+}
+
+
+
+/* main section start here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -132,11 +287,16 @@ nav button:hover{
 
 /* Media query small device */
 @media screen and (max-width:576px) {
-   .navbar, .items{
+   .navbar, .items {
     flex-direction: column;
    }
 
-   .items, .btn-primary, .gradient-btn, .btn-img{
+   .items, 
+   .btn-primary, 
+   .gradient-btn, 
+   .btn-img,
+   .nav-link
+   {
     display: none;
 
    }
@@ -163,14 +323,53 @@ nav button:hover{
     margin-right: 15px;
 
    }
-
-    
   
-}
+   .Parent-container{
+    background-size: 100% 55%;
+    margin-top: -172px;
+    
+
+   }
+   
+   .hero-circle{
+    width: 200px;
+    height: 200px;
+    
+    margin-top: 120px;
+   }
+
+   .microphone{
+    width: 80px;
+    width: 80px;
+    margin-top: 220px;
+   }
+   
+   .new-badge{
+    margin-top: 260px;
+    margin-right: 50px;
+    width: 40px;
+    height: 6px;
+    font-size: 10px;
+    padding-bottom: 9px;
+   }
+
+  .Hero-title{
+    font-size: 30px;
+  }
+
+   .Hero-description{
+   text-align: center;
+   font-size: 13px;
+   }
+
+   
+   /* main section start here */
 
 
 
 
+  }
 
 
+  
 
